@@ -45,27 +45,37 @@ After the cleaning process, the final dataset contains
 
 ---
 
-## Project Structure
+## How to run the project
+### 1. Clone the repository
 
-```text
-AirBnB-Skopje/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   └── skopje_airbnb_analysis.ipynb
-│
-├── results/
-│   └── figures/
-│
-├── src/
-│   ├── data_collection.py
-│   ├── data_cleaning.py
-│   ├── analysis.py
-│   └── visualization.py
-│
-├── .gitignore
-├── README.md
-└── requirements.txt
+```bash
+git clone https://github.com/ninazikovaa/projektno-nalogo.git
+Open the project directtory
+    cd projectno-nalogo
+Create a virtual environment
+    pyhon -m venv .venv
+Activate the virtual environment
+    .venv\Scripts\Activate.ps1
+Install the required libraries
+    The project uses the following Python libraries:
+
+    Pandas
+    NumPy
+    Matplotlib
+    Seaborn
+    Jupyter
+    Notebook
+    IPyKernel
+Run the data cleaning process
+    python src/data_cleaning.py
+    This loads the raw Airbnb dataset, cleans the data, removes invalid and extreme values, creates additional variables, and saves the cleaned dataset.
+Run the sttistical analysis
+    python src/analysis.py
+    This performs statistical analysis of prices, ratings, reviews, room types, neighbourhoods, Superhosts, correlations, and best-value listings.
+Generate the visualizations
+    python -c "import pandas as pd; from src.visualization import *; df=pd.read_csv('data/processed/skopje_airbnb_clean.csv'); prepare_output_directory(); plot_price_distribution(df); plot_price_by_room_type(df); plot_rating_distribution(df); plot_price_vs_rating(df); plot_reviews_vs_rating(df); plot_price_vs_capacity(df); plot_superhost_comparison(df); plot_neighbourhood_prices(df); plot_correlation_matrix(df)"
+Open the Jupyter Notebook
+    jupyter notebook
+    then open notebooks/skopje_airbnb_analysis.ipynb
+
+Nina Zikova
