@@ -28,23 +28,6 @@ The project investigates the following questions:
 8. Which listings provide the best combination of price and rating?
 
 ---
-
-## Data Source
-
-The dataset contains Airbnb listings from Skopje,
-North Macedonia.
-
-The data was obtained from:
-
-https://doorstepanalytics.com/report?country=North_Macedonia&location=Skopje
-
-The original dataset contains 2,398 listings and 68 columns.
-
-After the cleaning process, the final dataset contains
-2,148 listings and 70 columns.
-
----
-
 ## How to run the project
 ### 1. Clone the repository
 
@@ -78,4 +61,22 @@ Open the Jupyter Notebook
     jupyter notebook
     then open notebooks/skopje_airbnb_analysis.ipynb
 
+
+---
+## Data Source
+
+The dataset contains Airbnb listings from Skopje,
+North Macedonia.
+
+The data was obtained from:
+
+https://doorstepanalytics.com/report?country=North_Macedonia&location=Skopje
+
+The original dataset contains 2,398 listings and 68 columns.
+
+After the cleaning process, the final dataset contains
+2,148 listings and 70 columns.
+
+---
 Nina Zikova
+
