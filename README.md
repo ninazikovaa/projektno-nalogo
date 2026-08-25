@@ -33,7 +33,8 @@ The project investigates the following questions:
 
 ```bash
 git clone https://github.com/ninazikovaa/projektno-nalogo.git
-Open the project directtory
+### 2.Open the project directtory
+'''bash
     cd projectno-nalogo
 Create a virtual environment
     pyhon -m venv .venv
